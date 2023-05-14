@@ -1,4 +1,4 @@
-module apps.myname;
+module apps.marketing;
 
 mixin(ImportPhobos!());
 
@@ -8,7 +8,7 @@ public { // required uim libraries
   import uim.apps;
 }
 
-public { // admin-myname libraries
-  import apps.myname.controllers;
-  import apps.myname.views;
+public { // admin-marketing libraries
+  import apps.marketing.controllers;
+  import apps.marketing.views;
 }
