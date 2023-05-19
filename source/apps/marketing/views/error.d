@@ -3,9 +3,9 @@
   License: Subject to the terms of the Apache 2.0 license, as written in the included LICENSE.txt file.  
   Authors: Ozan Nurettin Süel (Sicherheitsschmiede)                                                      
 **********************************************************************************************************/
-module apps.myname.views.error;
+module apps.marketing.views.error;
 
-import apps.myname;
+import apps.marketing;
 @safe:
 
 class DMYNAMEErrorView : DView {
