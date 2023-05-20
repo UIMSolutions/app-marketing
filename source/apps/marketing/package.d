@@ -14,7 +14,7 @@ public { // admin-marketing libraries
 }
 
 static this() {
-  AppRegistry.register(  
+  AppRegistry.register("apps.marketing",  
     App
     .name("marketingApp")
     .rootPath("/apps/marketing")
