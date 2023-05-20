@@ -8,15 +8,15 @@ module apps.marketing.views.error;
 import apps.marketing;
 @safe:
 
-class DMYNAMEErrorView : DView {
-  mixin(ViewThis!("MYNAMEErrorView"));
+class DMKTErrorView : DView {
+  mixin(ViewThis!("MKTErrorView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
   }
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DMYNAMEErrorView~":DMYNAMEErrorView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DMKTErrorView~":DMKTErrorView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -24,4 +24,4 @@ class DMYNAMEErrorView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("MYNAMEErrorView"));
+mixin(ViewCalls!("MKTErrorView"));

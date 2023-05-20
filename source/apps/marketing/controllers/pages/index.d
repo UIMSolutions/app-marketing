@@ -8,14 +8,14 @@ module apps.marketing.controllers.pages.index;
 import apps.marketing;
 @safe:
 
-class DMYNAMEIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEIndexPageController"));
+class DMKTIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("MKTIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEIndexView(this));
+      .view(MKTIndexView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEIndexPageController"));
+mixin(ControllerCalls!("MKTIndexPageController"));

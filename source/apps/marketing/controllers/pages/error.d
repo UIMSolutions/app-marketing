@@ -8,14 +8,14 @@ module apps.marketing.controllers.pages.error;
 import apps.marketing;
 @safe:
 
-class DMYNAMEErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEErrorPageController"));
+class DMKTErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("MKTErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEErrorView(this));
+      .view(MKTErrorView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEErrorPageController"));
+mixin(ControllerCalls!("MKTErrorPageController"));

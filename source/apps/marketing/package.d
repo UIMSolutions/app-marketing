@@ -12,3 +12,12 @@ public { // admin-marketing libraries
   import apps.marketing.controllers;
   import apps.marketing.views;
 }
+
+static this() {
+  AppRegistry.register(  
+    App
+    .name("marketingApp")
+    .rootPath("/apps/marketing")
+    .addRoute(Route("", HTTPMethod.GET, MKTIndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, MKTIndexPageController)));
+}
