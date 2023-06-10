@@ -8,7 +8,7 @@ module apps.marketing.controllers.pages.error;
 import apps.marketing;
 @safe:
 
-class DMKTErrorPageController : DAPPPageController {
+class DMKTErrorPageController : DPageController {
   mixin(ControllerThis!("MKTErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

@@ -8,7 +8,7 @@ module apps.marketing.controllers.pages.index;
 import apps.marketing;
 @safe:
 
-class DMKTIndexPageController : DAPPPageController {
+class DMKTIndexPageController : DPageController {
   mixin(ControllerThis!("MKTIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
