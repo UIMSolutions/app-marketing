@@ -15,9 +15,11 @@ public { // admin-marketing libraries
 
 static this() {
   AppRegistry.register("apps.marketing",  
-    App
-    .name("marketingApp")
-    .rootPath("/apps/marketing")
-    .addRoute(Route("", HTTPMethod.GET, MKTIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, MKTIndexPageController)));
+    App("marketingApp", "/apps/marketing")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
