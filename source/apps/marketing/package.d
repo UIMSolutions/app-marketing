@@ -14,12 +14,21 @@ public { // admin-marketing libraries
 }
 
 static this() {
-  AppRegistry.register("apps.marketing",  
-    App("marketingApp", "/apps/marketing")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
-    );
+  // Create App
+  auto myApp = App("marketingApp", "apps/marketing");
+
+  // Customize App
+  with (myApp) {
+    importTranslations;
+    addControllers([
+      "marketing.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("marketing.index")),
+      Route("/", HTTPMethod.GET, controller("marketing.index"))
+    ); 
+  }
+
+  // Register App
+  AppRegistry.register("apps.marketing", myApp);
 }
